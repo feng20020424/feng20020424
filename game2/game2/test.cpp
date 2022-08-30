@@ -18,12 +18,21 @@ void game()
 	csh(fanglei, X2, Y2,'0');
 	csh(pailei, X2, Y2,'*');
 	//´òÓ¡ÆåÅÌ
-	daying(fanglei, X, Y);
 	daying(pailei, X, Y);
+	//daying(fanglei, X, Y);
+	//²¼ÖÃÀ×
+
+
+	xialei(fanglei, X, Y);
+	//daying(fanglei, X, Y);
+
+	paicha(fanglei,pailei, X, Y);
+
 }
 int main()
 {
 	int input = 0;
+	srand((unsigned int)time(NULL));
 	do 
 	{
 		ch();
