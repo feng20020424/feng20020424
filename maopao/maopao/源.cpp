@@ -96,7 +96,7 @@ void my_sort(void* base, int cd, int dx, int (*cmp)(const void* e1, const void* 
 		int j = 0;
 		for (j = 0; j < cd - 1-i; j++)
 		{
-			if (cmp((char*)base + j * dx, (char*)base + (j + 1) * dx) < 0)
+			if (cmp((char*)base + j * dx, (char*)base + (j + 1) * dx) > 0)
 			{
 				//交换地址的函数
 				//参数(第一个地址跟第二个地址，单个大小)
@@ -108,12 +108,11 @@ void my_sort(void* base, int cd, int dx, int (*cmp)(const void* e1, const void* 
 }
 int main()
 {
-	
-
 	int i = 0;
 	int arr[] = { 1,2,0,9,8,7,6,4,5,3 };
 	int cd = sizeof arr / sizeof arr[0];
 	my_sort(arr,cd,sizeof arr[0],cmp);
+
 	for (i = 0; i < cd; i++)
 	{
 		printf("%d", arr[i]);
