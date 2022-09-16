@@ -1,0 +1,24 @@
+﻿  源.cpp
+C:\code\qubie\qubie\源.cpp(92,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+C:\code\qubie\qubie\源.cpp(92,9): message : 请考虑在格式字符串中使用“%zd”
+C:\code\qubie\qubie\源.cpp(93,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+C:\code\qubie\qubie\源.cpp(93,9): message : 请考虑在格式字符串中使用“%zd”
+C:\code\qubie\qubie\源.cpp(94,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+C:\code\qubie\qubie\源.cpp(94,9): message : 请考虑在格式字符串中使用“%zd”
+C:\code\qubie\qubie\源.cpp(95,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+C:\code\qubie\qubie\源.cpp(95,9): message : 请考虑在格式字符串中使用“%zd”
+C:\code\qubie\qubie\源.cpp(96,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+C:\code\qubie\qubie\源.cpp(96,9): message : 请考虑在格式字符串中使用“%zd”
+C:\code\qubie\qubie\源.cpp(97,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+C:\code\qubie\qubie\源.cpp(97,9): message : 请考虑在格式字符串中使用“%zd”
+C:\code\qubie\qubie\源.cpp(98,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+C:\code\qubie\qubie\源.cpp(98,9): message : 请考虑在格式字符串中使用“%zd”
+C:\code\qubie\qubie\源.cpp(99,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+C:\code\qubie\qubie\源.cpp(99,9): message : 请考虑在格式字符串中使用“%zd”
+C:\code\qubie\qubie\源.cpp(100,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+C:\code\qubie\qubie\源.cpp(100,9): message : 请考虑在格式字符串中使用“%zd”
+C:\code\qubie\qubie\源.cpp(101,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+C:\code\qubie\qubie\源.cpp(101,9): message : 请考虑在格式字符串中使用“%zd”
+C:\code\qubie\qubie\源.cpp(102,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+C:\code\qubie\qubie\源.cpp(102,9): message : 请考虑在格式字符串中使用“%zd”
+  qubie.vcxproj -> C:\code\qubie\x64\Debug\qubie.exe
