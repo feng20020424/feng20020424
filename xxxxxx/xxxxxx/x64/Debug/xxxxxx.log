@@ -1,0 +1,16 @@
+﻿  源.cpp
+C:\code\xxxxxx\xxxxxx\源.cpp(230,13): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+C:\code\xxxxxx\xxxxxx\源.cpp(254,4): warning C4305: “=”: 从“double”到“float”截断
+C:\code\xxxxxx\xxxxxx\源.cpp(254,37): warning C4305: “-=”: 从“double”到“float”截断
+C:\code\xxxxxx\xxxxxx\源.cpp(259,38): warning C4305: “+=”: 从“double”到“float”截断
+C:\code\xxxxxx\xxxxxx\源.cpp(327,11): warning C4305: “=”: 从“double”到“float”截断
+C:\code\xxxxxx\xxxxxx\源.cpp(327,44): warning C4305: “-=”: 从“double”到“float”截断
+C:\code\xxxxxx\xxxxxx\源.cpp(332,37): warning C4305: “+=”: 从“double”到“float”截断
+C:\code\xxxxxx\xxxxxx\源.cpp(384,10): warning C4305: “=”: 从“double”到“float”截断
+C:\code\xxxxxx\xxxxxx\源.cpp(384,43): warning C4305: “-=”: 从“double”到“float”截断
+C:\code\xxxxxx\xxxxxx\源.cpp(389,37): warning C4305: “+=”: 从“double”到“float”截断
+C:\code\xxxxxx\xxxxxx\源.cpp(441,11): warning C4305: “=”: 从“double”到“float”截断
+C:\code\xxxxxx\xxxxxx\源.cpp(441,44): warning C4305: “-=”: 从“double”到“float”截断
+C:\code\xxxxxx\xxxxxx\源.cpp(446,37): warning C4305: “+=”: 从“double”到“float”截断
+C:\code\xxxxxx\xxxxxx\源.cpp(61,19): warning C4101: “j”: 未引用的局部变量
+  xxxxxx.vcxproj -> C:\code\xxxxxx\x64\Debug\xxxxxx.exe
