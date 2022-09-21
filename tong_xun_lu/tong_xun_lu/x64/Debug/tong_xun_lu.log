@@ -1,0 +1,4 @@
+﻿  源1.cpp
+C:\code\tong_xun_lu\tong_xun_lu\test.h(1,1): warning C4828: 文件包含在偏移 0x200 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
+C:\code\tong_xun_lu\tong_xun_lu\源1.cpp(134,13): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+  tong_xun_lu.vcxproj -> C:\code\tong_xun_lu\x64\Debug\tong_xun_lu.exe
