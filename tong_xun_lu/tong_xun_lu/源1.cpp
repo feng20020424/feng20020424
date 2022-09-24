@@ -1,13 +1,58 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include"test.h"
-
-void add(tx* p)
+void duwenjian(tx* p)
 {
-	if (p->sz == MAX)
+	FILE* pf = fopen("con.dat", "r");
+	if (pf == NULL)
 	{
-		printf("通讯录已满\n");
+		perror("fopen");
 		return;
 	}
+	txl tmp = { 0 };
+	while (fread(&tmp, sizeof(txl), 1, pf))
+	{
+		zengzhi(p);
+		p->ml[p->sz] = tmp;
+		p->sz++;
+	}
+	
+	
+}
+void init(tx* p)
+{
+	p->ml = (txl*)malloc(SZ * sizeof(txl));
+	if (p->ml == NULL)
+	{
+		perror("init");
+		return;
+	}
+	p-> sz = 0;
+	p->cap = SZ;
+	duwenjian(p);
+}
+void zengzhi(tx* p)
+{
+	if (p->sz == p->cap)
+	{
+		txl* prt = (txl*)realloc(p->ml, (p->cap + INT_SZ) * sizeof(txl));
+		if (prt != NULL)
+		{
+			p->ml = prt;
+			p->cap += INT_SZ;
+			printf("增容成功\n");
+		}
+		else
+		{
+			perror("add");
+			printf("增加联系人失败");
+			return;
+		}
+		return;
+	}
+}
+void add(tx* p)
+{
+	zengzhi(p);
 	printf("请输入名字\n");
 	scanf("%s", &(p->ml[p->sz].name));
 	printf("请输入年龄\n");
@@ -130,3 +175,33 @@ void pai(tx* p)
 {
 	;
 }
+
+void dc(tx* p)
+{
+	free(p->ml);
+	p->ml = NULL;
+	p->cap = 0;
+	p->sz = 0;
+
+}
+void bc(tx* p)
+{
+	FILE *pf=fopen("con.dat", "w");
+	if (pf == NULL)
+	{
+		perror("fopen");
+	}
+	int i = 0;
+	for (i = 0; i < p->sz; i++)
+	{
+		fwrite(p->ml + i, sizeof(txl), 1, pf);
+	}
+	fclose(pf);
+	pf = NULL;
+
+
+
+
+}
+
+

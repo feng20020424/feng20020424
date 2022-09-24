@@ -15,8 +15,8 @@ void cd()
 int main()
 {
 	int i = 0;
-	
-	tx con = { 0 };
+	tx con;
+	init(&con);
 	
 	do
 	{
@@ -44,6 +44,8 @@ int main()
 			print(&con);
 			break;
 		case 0:
+			bc(&con);
+			dc(&con);
 			printf("ÍË³ö\n");
 			break;
 		default:
