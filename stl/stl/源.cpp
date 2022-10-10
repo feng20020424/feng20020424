@@ -2,6 +2,9 @@
 #include<iostream>
 #include<vector>
 #include<string>
+#include<deque>
+#include<algorithm>
+using namespace std;
 //using namespace std;
 //int main()
 //{
@@ -81,29 +84,115 @@
 //	}
 //	return 0;
 //}
-using namespace std;
-void dy(vector<int>&v)
+//using namespace std;
+//void dy(vector<int>&v)
+//{
+//	for (vector<int>::iterator it = v.begin(); it != v.end(); it++)
+//	{
+//		cout << (*it);
+//	}
+//	cout << endl;
+//}
+//
+//int main()
+//{
+//	vector<int>v;
+//	for (int i = 0; i < 9; i++)
+//	{
+//		v.push_back(i);
+//	}
+//	dy(v);
+//	vector<int>v2(v.begin(), v.end());
+//	dy(v2);
+//	vector<int>v3(10, 100);
+//	dy(v3);
+//	vector<int>v4(v3);
+//	dy(v4);
+//	return 0;
+//}
+//void dy(vector<int>& v)
+//{
+//	for (vector<int>::iterator it = v.begin(); it < v.end(); it++)
+//	{
+//		cout << (*it )<<" ";
+//	}
+//	cout << endl;
+//}
+//int main()
+//{
+//	vector<int>v1;
+//	vector<int>v2;
+//	for (int i = 0; i < 10000; i++)
+//	{
+//		v1.push_back(i);
+//	}
+//	dy(v1);
+//	for (int i = 10; i > 0; i--)
+//	{
+//		v2.push_back(i);
+//	}
+//	dy(v2);
+//	cout << "交换后——————————————————————————————" << endl;
+//	//if (v1.empty() )
+//	//{
+//	//	cout << "容器为空" << endl;
+//	//}
+//	//else
+//	//{
+//		cout << "容器容量为 " << v1.capacity() << endl;
+//		cout << "容器大小 " << v1.size() << endl;
+//	//}
+//	//v1.resize(15,6);//重新指定大小
+//	//dy(v1);
+//	v1.swap(v2);
+//	dy(v1);
+//	dy(v2);
+//
+//
+//	return 0;
+//}
+//void dy(const deque<int>& d)
+//{
+//	for (deque<int>::const_iterator it = d.begin(); it < d.end(); it++)
+//	{
+//		cout << (*it) << endl;
+//	}
+//}
+//int main()
+//{
+//	deque<int>d1;
+//	d1.push_back(1010);
+//	d1.push_back(1012);//尾插
+//	d1.push_front(1011);//头插
+//	d1.push_front(1014);
+//
+//
+//	d1.pop_front();//头删
+//	d1.pop_back();//尾删
+//
+//	d1.insert(d1.begin(), 2, 10000);
+//	d1.erase(d1.begin());
+//	dy(d1);
+//	return 0;
+//}
+void dy(const deque<int>& d)
 {
-	for (vector<int>::iterator it = v.begin(); it != v.end(); it++)
+	for (deque<int>::const_iterator it = d.begin(); it < d.end(); it++)
 	{
-		cout << (*it);
+		cout << (*it)<<" ";
 	}
 	cout << endl;
-}
 
+}
 int main()
 {
-	vector<int>v;
-	for (int i = 0; i < 9; i++)
-	{
-		v.push_back(i);
-	}
-	dy(v);
-	vector<int>v2(v.begin(), v.end());
-	dy(v2);
-	vector<int>v3(10, 100);
-	dy(v3);
-	vector<int>v4(v3);
-	dy(v4);
+	deque<int>d;
+	d.push_back(10);
+	d.push_back(17);
+	d.push_back(11);
+	d.push_back(12);
+	dy(d);
+	sort(d.begin(), d.end());
+	dy(d);
 	return 0;
 }
