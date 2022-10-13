@@ -1,0 +1,5 @@
+﻿  源.cpp
+C:\code\stl2\stl2\源.cpp(43,29): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\code\stl2\stl2\源.cpp(52,25): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+C:\code\stl2\stl2\源.cpp(61,24): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  stl2.vcxproj -> C:\code\stl2\x64\Debug\stl2.exe
