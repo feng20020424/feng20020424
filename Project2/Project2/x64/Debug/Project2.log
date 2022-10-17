@@ -1,0 +1,5 @@
+﻿  源.cpp
+C:\code\Project2\Project2\源.cpp(20,22): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\code\Project2\Project2\源.cpp(64,10): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+C:\code\Project2\Project2\源.cpp(64,8): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+  Project2.vcxproj -> C:\code\Project2\x64\Debug\Project2.exe
