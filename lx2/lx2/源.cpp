@@ -1,21 +1,36 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
-
 int main() {
-    long long a, b;
-    scanf("%lld%lld", &a, &b);
-    long long d = a, e = b;
-    long long c = a;
-    while (1)
+    int a = 0;
+    scanf("%d", &a);
+    int b = a;
+    int c = a;
+    int d = 0;
+    while (b)
     {
-        if (d % e == 0)
+        a = b + 1;
+        while (a)
         {
-            break;
+            printf("* ");
+            a--;
         }
-        c = (d % e);
-        d = e;
-        e = c;
+        printf("\n");
+        b--;
     }
-    printf("%lld", c + (a * b) / c);
+    printf("*\n");
+    a = 2;
+    while (c)
+    {
+    
+        d = a;
+        while (d)
+        {
+            printf("* ");
+            d--;
+        }
+        printf("\n");
+        c--;
+        a++;
+    }
     return 0;
 }
