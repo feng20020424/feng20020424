@@ -1,0 +1,3 @@
+﻿  源.cpp
+C:\code\test8\test8\源.cpp(10,24): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  test8.vcxproj -> C:\code\test8\x64\Debug\test8.exe
