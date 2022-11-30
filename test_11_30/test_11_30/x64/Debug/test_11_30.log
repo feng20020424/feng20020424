@@ -1,0 +1,7 @@
+﻿  源.cpp
+C:\code\test_11_30\test_11_30\源.cpp(10,12): error C2131: 表达式的计算结果不是常数
+C:\code\test_11_30\test_11_30\源.cpp(10,12): message : 因读取超过生命周期的变量而失败
+C:\code\test_11_30\test_11_30\源.cpp(10,12): message : 请参见“n”的用法
+C:\code\test_11_30\test_11_30\源.cpp(22,19): error C3863: 不可指定数组类型“int [n]”
+C:\code\test_11_30\test_11_30\源.cpp(35,31): warning C4552: ”<<“: 未使用表达式结果
+C:\code\test_11_30\test_11_30\源.cpp(46,31): warning C4552: ”<<“: 未使用表达式结果
